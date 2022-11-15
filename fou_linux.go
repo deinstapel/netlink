@@ -172,7 +172,6 @@ func (h *Handle) FouList(fam int) ([]Fou, error) {
 func deserializeFouMsg(msg []byte) (Fou, error) {
 	// we'll skip to byte 4 to first attribute
 	msg = msg[3:]
-	var shift int
 	fou := Fou{}
 
 	for {
